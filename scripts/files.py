@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-def read_data(file_path: str | Path) -> dict:
+def read_data(file_path: str) -> dict:
     file_path = Path(file_path)
     result = {}
     if file_path.is_file():
@@ -16,7 +16,7 @@ def read_data(file_path: str | Path) -> dict:
     return result
 
 
-def write_data(file_path: str | Path, data: dict, overwrite: bool = False):
+def write_data(file_path: str, data: dict, overwrite: bool = False):
     file_path = Path(file_path)
     if not file_path.is_file() or (file_path.is_file() and overwrite):
         with open(file_path, "w") as file:
