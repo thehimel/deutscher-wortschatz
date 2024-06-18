@@ -1,6 +1,4 @@
-# germanwords-backend
-
-Backend for German Words
+# Vocabulary
 
 ## Run Production Server Locally
 
